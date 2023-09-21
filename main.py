@@ -1,5 +1,10 @@
-year=int(input("Enter a year:"))
-if(year%4==0):
-  print("The given year is leap year")
+n=int(input("Enter input number:"))
+fact=1
+if n<0:
+  print("Factorial does not exist for neg")
+elif n==0:
+  print("The factorial of 0 is 1")
 else:
-  print("The given year is not a leap year")
+  for i in range(1,n+1):
+    fact=fact*i
+  print("The factorial of",n,"is",fact)
